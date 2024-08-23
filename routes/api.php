@@ -11,8 +11,14 @@ Route::get('/users', [UserController::class, 'index']);
 // Buscar por um usuário pelo ID
 Route::get('/users/{id}', [UserController::class, 'findOne']);
 
+// Criar um novo usuário
+Route::post('/users', [UserController::class, 'insert']);
+
 
 Route::get('/addresses', [AddressController::class, 'index']);
 
 // Buscar por um endereço pelo ID
 Route::get('/addresses/{id}', [AddressController::class, 'findOne']);
+
+// Criar um novo endereço
+Route::post('/addresses', [AddressController::class, 'insert']);
