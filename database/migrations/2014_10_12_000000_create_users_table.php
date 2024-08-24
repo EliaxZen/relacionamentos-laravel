@@ -22,6 +22,8 @@ return new class extends Migration
             $table->unsignedBigInteger('address_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
+
+            $table->foreign('address_id')->references('id')->on('addresses');
         });
     }
 
