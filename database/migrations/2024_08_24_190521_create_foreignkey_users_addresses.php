@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
-            $table->unsignedBigInteger('address_id')->nullable();
         });
     }
 
@@ -28,8 +27,6 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
-            $table->dropColumn('address_id');
         });
-
     }
 };
