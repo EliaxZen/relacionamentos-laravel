@@ -24,6 +24,7 @@ Route::get('/addresses/{id}', [AddressController::class, 'findOne']);
 // Criar um novo endereço
 Route::post('/addresses', [AddressController::class, 'insert']);
 
+// Busca todas as invoices
 Route::get('/invoices', [InvoiceController::class, 'index']);
 
 // Criar uma nova invoice
