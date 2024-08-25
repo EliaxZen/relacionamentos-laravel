@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('description')->nullable();
             $table->float('valor')->default(0);
-            $table->unsignedBigInteger('address_id');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('address_id')->nullable();
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->timestamps();
         });
     }

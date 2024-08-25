@@ -12,8 +12,6 @@ class Invoice extends Model
     protected $fillable = [
         'description',
         'valor',
-        'user_id',
-        'address_id',
     ];
     use HasFactory;
 }

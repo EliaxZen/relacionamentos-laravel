@@ -14,7 +14,7 @@ class InvoiceController extends Controller
     }
 
     public function insert(Request $r){
-        $raw_data = $r->only(['description', 'valor', 'user_id', 'address_id']);
+        $raw_data = $r->only(['description', 'valor']);
         
         $invoice = Invoice::create($raw_data);
         return $invoice;
