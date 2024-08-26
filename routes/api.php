@@ -27,5 +27,8 @@ Route::post('/addresses', [AddressController::class, 'insert']);
 // Busca todas as invoices
 Route::get('/invoices', [InvoiceController::class, 'index']);
 
+// Buscar uma invoice pelo ID
+Route::get('/invoices/{id}', [InvoiceController::class, 'findOne']);
+
 // Criar uma nova invoice
 Route::post('/invoices', [InvoiceController::class, 'insert']);
