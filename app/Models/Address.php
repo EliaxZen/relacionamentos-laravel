@@ -13,6 +13,5 @@ class Address extends Model
         'address',
     ];
 
-
     use HasFactory;
 }
